@@ -34,8 +34,9 @@ export default function Example() {
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5 font-semibold">
-            <p className="text-3xl tracking-tight text-blue-600 font-semibold">CAPTURE <span className="text-black">ME</span></p>
+          <a href="/" className="-m-1.5 gap-1 p-1.5 flex items-center justify-center font-semibold">
+            <img className="h-10 w-auto" src="/camera-svgrepo-com.svg?color=indigo&shade=600" alt="" />
+            <p className="text-3xl tracking-tight text-[#9dd4e3] font-semibold">CAPTURE <span className="text-black">ME</span></p>
           </a>
         </div>
 
@@ -55,15 +56,15 @@ export default function Example() {
           {/* Nav Links  */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-        <a href="/" className="text-sm font-semibold leading-6 text-gray-900  ">
+        <a href="/" className="text-md font-semibold leading-6 text-gray-900  ">
             HOME
           </a>
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900 ">
+          <a href="/" className="text-md font-semibold leading-6 text-gray-900 ">
             ABOUT US
           </a>
           
           <Popover className="relative">
-            <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-md font-semibold leading-6 text-gray-900">
               SERVICES
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -82,10 +83,10 @@ export default function Example() {
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-[#9dd4e3]" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -114,14 +115,14 @@ export default function Example() {
           </Popover>
 
 
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900 ">
+          <a href="/" className="text-md font-semibold leading-6 text-gray-900 ">
             CONTACT
           </a>
         </Popover.Group>
 
         {/* Login Button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-lg font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -132,8 +133,9 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/" className="-m-1.5 p-1.5">
-              <p className="text-2xl tracking-tight text-blue-600 font-semibold">CAPTURE <span className='text-black' >ME</span></p>
+            <a href="/" className="-m-1.5 p-1.5 ">
+            <img className="h-10 w-auto" src="/camera-svgrepo-com.svg?color=indigo&shade=600" alt="" />
+              
             </a>
 
             {/* Button for close */}
