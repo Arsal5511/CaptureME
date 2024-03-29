@@ -116,7 +116,7 @@ export default function Example() {
           </Popover>
 
 
-          <Link to="/Contact" className="text-md font-semibold leading-6 text-gray-900 ">
+          <Link to="/Contact" className=" text-md font-semibold leading-6 text-gray-900 ">
             CONTACT
           </Link>
         </Popover.Group>
