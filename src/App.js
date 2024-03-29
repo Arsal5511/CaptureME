@@ -7,6 +7,7 @@ import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import Gallery from './components/constants/Gallery';
 import Video from './components/constants/Video';
+import Faqs from './components/faqs/Faqs';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 </Router>
 <Video />
     <Gallery />
+    <Faqs />
     <Footer />
 </>
   );
