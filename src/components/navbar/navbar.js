@@ -10,6 +10,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 const products = [
   { name: 'Commercial Video Production', description: 'Get a better understanding of your traffic', href: '/', icon: ChartPieIcon },
@@ -56,12 +57,12 @@ export default function Example() {
           {/* Nav Links  */}
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-        <a href="/" className="text-md font-semibold leading-6 text-gray-900  ">
+        <Link to="/" className="text-md font-semibold leading-6 text-gray-900  ">
             HOME
-          </a>
-          <a href="/" className="text-md font-semibold leading-6 text-gray-900 ">
+          </Link>
+          <Link to="/About" className="text-md font-semibold leading-6 text-gray-900 ">
             ABOUT US
-          </a>
+          </Link>
           
           <Popover className="relative">
             <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-md font-semibold leading-6 text-gray-900">
@@ -115,9 +116,9 @@ export default function Example() {
           </Popover>
 
 
-          <a href="/" className="text-md font-semibold leading-6 text-gray-900 ">
+          <Link to="/Contact" className="text-md font-semibold leading-6 text-gray-900 ">
             CONTACT
-          </a>
+          </Link>
         </Popover.Group>
 
         {/* Login Button */}
