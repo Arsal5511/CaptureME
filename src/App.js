@@ -1,13 +1,17 @@
 import Navbar from './components/navbar/navbar';
 import { BrowserRouter as Router, Route,  Routes } from 'react-router-dom';
 import About from './components/About/About';
-import React from 'react';
+import React, { Children } from 'react';
 import Contact from './components/contact/Contact';
 import Home from './components/home/Home';
+import Footer from './components/footer/Footer';
+import Gallery from './components/constants/Gallery';
+import Video from './components/constants/Video';
 
 
 function App() {
   return (
+    <>
     <Router>
     <div>
         <Navbar />
@@ -25,6 +29,10 @@ function App() {
         </Routes>
     </div>
 </Router>
+<Video />
+    <Gallery />
+    <Footer />
+</>
   );
 }
 
